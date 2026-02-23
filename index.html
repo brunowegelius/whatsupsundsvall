@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
   <title>What's Up Sundsvall</title>
   <style>
     @font-face {
@@ -25,9 +26,10 @@
       padding: 0;
     }
 
-    html {
+    html, body {
       width: 100%;
       height: 100%;
+      overflow: hidden;
     }
 
     body {
@@ -35,8 +37,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      min-height: 100%;
-      padding: clamp(32px, 6vh, 80px) 0;
+      min-height: 100svh;
       background-image: url('assets/bilder/bakgrund.jpg');
       background-size: cover;
       background-position: center;
@@ -58,7 +59,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: clamp(16px, 4vh, 56px);
+      gap: clamp(8px, 2svh, 56px);
       padding: clamp(16px, 3vw, 64px);
       width: 100%;
       max-width: min(90vw, 860px);
@@ -66,15 +67,15 @@
     }
 
     .logo {
-      width: clamp(180px, 28vw, 420px);
+      width: clamp(120px, 28vw, 420px);
       height: auto;
       filter: brightness(0) invert(1);
-      margin-bottom: clamp(16px, 4vh, 56px);
+      margin-bottom: clamp(4px, 1svh, 56px);
     }
 
     h1 {
       font-family: 'PicNic', serif;
-      font-size: clamp(20px, 3.5vw, 48px);
+      font-size: clamp(18px, 3.5vw, 48px);
       color: #ffffff;
       letter-spacing: 0.12em;
       line-height: 1;
@@ -89,7 +90,7 @@
     .manifesto {
       display: flex;
       flex-direction: column;
-      gap: clamp(6px, 1.2vh, 16px);
+      gap: clamp(4px, 1svh, 16px);
     }
 
     .ig-link {
@@ -106,9 +107,9 @@
 
     .manifesto p {
       font-family: 'Satoshi', sans-serif;
-      font-size: clamp(15px, 1.6vw, 21px);
+      font-size: clamp(13px, 1.6vw, 21px);
       color: rgba(255, 255, 255, 0.88);
-      line-height: 1.65;
+      line-height: 1.5;
       font-weight: 400;
       letter-spacing: 0.01em;
     }
