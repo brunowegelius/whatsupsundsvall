@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What's Up Sundsvall</title>
+  <style>
+    @font-face {
+      font-family: 'PicNic';
+      src: url('assets/fonts/PicNic-Regular%202.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Satoshi';
+      src: url('assets/fonts/Satoshi-Variable.woff2') format('woff2');
+      font-weight: 100 900;
+      font-style: normal;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    body {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-image: url('assets/bilder/bakgrund.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    body::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.52);
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: clamp(16px, 4vh, 56px);
+      padding: clamp(16px, 3vw, 64px);
+      width: 100%;
+      max-width: clamp(480px, 70vw, 860px);
+      text-align: center;
+    }
+
+    .logo {
+      width: clamp(180px, 28vw, 420px);
+      height: auto;
+      filter: brightness(0) invert(1);
+      margin-bottom: clamp(16px, 4vh, 56px);
+    }
+
+    h1 {
+      font-family: 'PicNic', serif;
+      font-size: clamp(20px, 3.5vw, 48px);
+      color: #ffffff;
+      letter-spacing: 0.12em;
+      line-height: 1;
+    }
+
+    .divider {
+      width: clamp(40px, 6vw, 80px);
+      height: 1px;
+      background: rgba(255, 255, 255, 0.45);
+    }
+
+    .manifesto {
+      display: flex;
+      flex-direction: column;
+      gap: clamp(6px, 1.2vh, 16px);
+    }
+
+    .manifesto p {
+      font-family: 'Satoshi', sans-serif;
+      font-size: clamp(13px, 1.6vw, 21px);
+      color: rgba(255, 255, 255, 0.88);
+      line-height: 1.65;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="assets/logos/wu-svg.svg" alt="What's Up Sundsvall" class="logo">
+    <h1>MANIFESTO</h1>
+    <div class="divider"></div>
+    <div class="manifesto">
+      <p>Sundsvall är en stad med mer att erbjuda än vad som syns på ytan. Vi tror på en stad där kvällarna är värda att minnas, där det alltid finns något på gång och där rätt människor hittar varandra på rätt ställen.</p>
+      <p>Vi samlar det bästa av Sundsvalls nöjesliv – konserter, klubbar, pop-ups och upplevelser – och lyfter fram det som faktiskt håller. Inte allt. Det rätta.</p>
+      <p>Men vi nöjer oss inte med att bara berätta om vad andra skapar. Vi vill vara en aktiv del av stadens puls. Vi initierar, samarbetar och bidrar till evenemang som ger Sundsvall den energi staden förtjänar.</p>
+      <p>Vi tror på ett nöjesliv som är öppet för alla – oavsett vem du är, var du kommer ifrån eller vad du är ute efter. Natten ska kännas välkomnande.</p>
+    </div>
+  </div>
+</body>
+</html>
